@@ -19,9 +19,11 @@ const AddColorForm = ({store}) => {
         <form className="add-color" onSubmit={submit}>
             <input ref={input => _title = input}
                    type="text"
-                   placeholder="색 이름..." required/>
+                   placeholder="색 이름..." required
+            />
             <input ref={input => _color = input}
-                   type="color" required/>
+                   type="color" required
+            />
             <button>추가</button>
         </form>
     )

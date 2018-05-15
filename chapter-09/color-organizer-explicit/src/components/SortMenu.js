@@ -17,8 +17,9 @@ const SortMenu = ({ store }) =>
                className={(store.getState().sort === options[item]) ? "selected" : null}
                onClick={e => {
                    e.preventDefault()
-                   store.dispatch(sortColors(options[item]))
-               }}>{item}</a>
+                   store.dispatch(sortColors(options[item])) // 액션객체(action + payload) 로 dispatch 하여라!
+               }}>{item}
+            </a>
         )}
     </nav>
 

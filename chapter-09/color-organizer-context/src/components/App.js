@@ -8,9 +8,10 @@ import { sortFunction } from '../lib/array-helpers'
 
 class App extends Component {
 
-    getChildContext() {
+    // life cycle 함수 중 하나. context 를 정의하는 객체를 반환
+	getChildContext() {
         return {
-            store: this.props.store
+            store: this.props.store // store 를 context 에 추가 한다
         }
     }
 
@@ -42,6 +43,7 @@ App.propTypes = {
     store: PropTypes.object.isRequired
 }
 
+// react context 사용을 위해 꼭 정의해야 함
 App.childContextTypes = {
     store: PropTypes.object.isRequired
 }

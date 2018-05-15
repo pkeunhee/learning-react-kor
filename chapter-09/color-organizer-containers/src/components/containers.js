@@ -5,6 +5,8 @@ import ColorList from './ui/ColorList'
 import { addColor, sortColors, rateColor, removeColor } from '../actions'
 import { sortFunction } from '../lib/array-helpers'
 
+// wrapper 컴포넌트로 표현 컴포넌트를 감싸 새로운 container 들을 만든다
+
 export const NewColor = (props, { store }) =>
     <AddColorForm onNewColor={(title, color) =>
                       store.dispatch(addColor(title,color))

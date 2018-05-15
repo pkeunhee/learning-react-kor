@@ -3,6 +3,8 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import { addColor } from '../actions'
 
+// 상태가 없는 함수형 컴포넌트
+// 함수 파라미터에서 store 를 얻어 올수 있다. (두번째 파라미터)
 const AddColorForm = (props, { store }) => {
 
     let _title, _color
@@ -28,6 +30,7 @@ const AddColorForm = (props, { store }) => {
 
 }
 
+// 이걸 지정해야 context 변수를 파라미터로 받아 올 수 있다. (필수)
 AddColorForm.contextTypes = {
     store: PropTypes.object
 }

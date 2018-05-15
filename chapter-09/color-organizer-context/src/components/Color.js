@@ -6,6 +6,7 @@ import TimeAgo from './TimeAgo'
 import FaTrash from 'react-icons/lib/fa/trash-o'
 import { rateColor, removeColor } from '../actions'
 
+// 컴포넌트 클래스에서는 this.context 로 가져올수 있다.
 class Color extends Component {
 
     render() {
@@ -35,6 +36,7 @@ class Color extends Component {
 
 }
 
+// context 를 사용하려면 필수로 기술해야 함
 Color.contextTypes = {
     store: PropTypes.object
 }

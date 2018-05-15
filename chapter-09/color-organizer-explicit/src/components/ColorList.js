@@ -5,7 +5,7 @@ import { rateColor, removeColor } from '../actions'
 import { sortFunction } from '../lib/array-helpers'
 
 const ColorList = ({ store }) => {
-    const { colors, sort } = store.getState()
+    const { colors, sort } = store.getState() // 스토어의 객체를 꺼내 온다
     const sortedColors = [...colors].sort(sortFunction(sort))
     return (
         <div className="color-list">
@@ -19,7 +19,7 @@ const ColorList = ({ store }) => {
                                    rateColor(color.id, rating)
                                )
                        }
-                           onRemove={() =>
+                       onRemove={() =>
                                store.dispatch(
                                    removeColor(color.id)
                                )
