@@ -18,13 +18,14 @@
       print: function(delay=1000) {
 
         setTimeout(() => {
-          console.log(this === window)
+            console.log(this === window)
+			console.log(this.resorts.join(","))
         }, delay)
 
       }
     }
 
-    gangwon.print(); // true
+    gangwon.print(); // false
 
 </script>
 </body>

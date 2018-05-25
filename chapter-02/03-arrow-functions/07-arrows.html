@@ -18,6 +18,7 @@
       print: function(delay=1000) {
 
         setTimeout(function() {
+		  console.log(this)
           console.log(this.resorts.join(","))
         }, delay)
 
