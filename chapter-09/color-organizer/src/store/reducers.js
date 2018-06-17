@@ -1,5 +1,7 @@
 import C from '../constants'
 
+// action 의 타입에 따라 state 를 어떻게 업데이트 할지에 대한 로직
+
 export const color = (state = {}, action) => {
     switch (action.type) {
         case C.ADD_COLOR:

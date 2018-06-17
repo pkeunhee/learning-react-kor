@@ -6,11 +6,10 @@ import { addColor, sortColors, rateColor, removeColor } from '../actions'
 import { sortFunction } from '../lib/array-helpers'
 
 // 컨테이너 컴포넌트 생성하기
-// connect 함수 파라미터 : 1) 상태 변수를 프로퍼티로 연결하는 함수, 2) 이벤트가 발생하면 액션을 dispatch 해주는 함수
+// connect 함수 파라미터 : 1) state 변수를 프로퍼티로 연결하는 함수, 2) 이벤트가 발생하면 액션을 dispatch 해주는 함수
 // connect 로 state 와 dispatch 를 세팅해 주면 대상 컴포넌트의 파라미터에 해당 이름으로 전달되어 값들을 참조하거나 함수를 실행할 수 있다.
 
-
-// state 는 null 로 지정한 예
+// state 를 null 로 지정한 예
 export const NewColor = connect(
     null,
     dispatch =>

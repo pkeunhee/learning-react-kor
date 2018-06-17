@@ -8,8 +8,9 @@ const selectedStyle = {
 }
 
 export const MainMenu = () =>
-    <nav className="main-menu">
-        <NavLink to="/"><HomeIcon/></NavLink>
+	//NavLink 컴포넌트는 activeStyle 프로퍼티로 링크 활성화시 스타일을 지정할 수 있다.
+	<nav className="main-menu">
+    	<NavLink to="/"><HomeIcon/></NavLink>
         <NavLink to="/about" activeStyle={selectedStyle}>[회사 소개]</NavLink>
         <NavLink to="/events" activeStyle={selectedStyle}>[이벤트]</NavLink>
         <NavLink to="/products" activeStyle={selectedStyle}>[제품]</NavLink>
