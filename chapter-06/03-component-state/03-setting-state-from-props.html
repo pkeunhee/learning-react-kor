@@ -37,7 +37,8 @@
             totalStars: 5
         }
 
-        constructor(props) {
+        // 컴포넌트가 마운트 될때 생성자로 넘어온 props 에서 디폴트 값을 this.state 에 세팅할 수도 있다. 
+		constructor(props) {
             super(props)
             this.state = {
                 starsSelected: props.starsSelected || 0
